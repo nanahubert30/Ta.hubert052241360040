@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Merriweather:300,900);
+
+:root{
+   --main-color:#8e44ad;
+   --red:#e74c3c;
+   --orange:#f39c12;
+   --light-color:#888;
+   --light-bg:#eee;
+   --black:#2c3e50;
+   --white:#fff;
+   --border:.1rem solid rgba(0,0,0,.2);
+}
+
+*{
+   font-family: 'Nunito', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+}
+
+*::selection{
+   background-color: var(--main-color);
+   color:#fff;
+}
+
+html{
+   font-size: 70.5%;
+   overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+   width: 2rem;
+   height: .6rem;
+}
+
+html::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+   background-color: var(--main-color);
+}
+
+body{
+   background-color: var(--light-bg);
+   padding-left: 30rem;
+   margin: 0;
+}
+
+body.dark{
+   --light-color:#aaa;
+   --light-bg:#333;
+   --black:#fff;
+   --white:#222;
+   --border:.1rem solid rgba(255,255,255,.2);
+}
+
+body.active{
+   padding-left: 0;
+}
+
+section{
+   padding:2rem;
+   margin: 0 auto;
+   max-width: 1200px;
+}
+
+.side-bar{
+   position: fixed;
+   top: 0; left: 0;
+   width: 30rem;
+   background-color: #fff;;
+   height: 100vh;
+   border-right: var(--border);
+   z-index: 1200;
+}
+
+.side-bar .navbar a{
+   display: block;
+   padding: 2rem;
+   font-size: 2rem;
+}
+
+.side-bar .navbar a i{
+   margin-right: 1.5rem;
+   color:var(--main-color);
+   transition: .2s linear;
+}
+
+.side-bar .navbar a span{
+   color:var(--light-color);
+}
+
+.side-bar .navbar a:hover i{
+   margin-right: 2.5rem;
+}
+.side-bar .navbar img {
+   margin: 30px;
+}
+
+h1{
+   color: #213b5e;
+   font-size: 70px;
+   text-align: center;
+   font-family: 'Times New Roman', Times, serif;
+   position: absolute;
+   top: 120px;
+   right: 390px;
+}
+
+ .item1 {
+    background: #ffffff;
+    color: #012232;
+    font-size: 30px;
+    padding: 20px;
+    border: #eee 1px solid;
+}
+.item1 p1{
+    color: #213b5e;
+}
+.item p{
+    color: #213b5e;
+}
+.container {
+    max-width: 900px;
+    text-align: center;
+    margin: 404px auto;
+    padding: 1px ;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background:#eee;
+    gap: 10px;
+}
+.item {
+    background: #ffffff;
+    color: #011925;
+    font-size: 30px;
+    padding: 20px;
+    border: #eee 1px solid;
+}
+ 
+.container .item a{
+    width: 100em;
+    height: 10em;
+    font-size: 30px;
+    font-family: inherit;
+    background: #2c3e50;
+    color: #ffffff;
+}
+ 
+.container .item a:hover{
+    color: #e9e3e3;
+    padding-left: 18px;
+    padding-right: 18px;
+}
